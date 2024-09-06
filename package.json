@@ -1,7 +1,6 @@
 {
   "name": "beto_carrero",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.0",  
   "scripts": {
     "dev": "parcel src/index.html src/scripts/main.js src/styles/main.scss",
     "build": "parcel build src/index.html",
