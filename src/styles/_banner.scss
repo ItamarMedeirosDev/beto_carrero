@@ -1,0 +1,38 @@
+.banner {
+  background-color: #1B202F;
+  height: 900px;
+  position: relative;
+  
+  &__mais {
+    img {
+      position: absolute;
+      top: 650px; // Adicione a unidade "px"
+      left: 950px; // Adicione a unidade "px"
+    }
+  }
+  
+  &__animals {
+    img {
+      max-height: 400px;
+      position: absolute;
+      top: 450px; // Adicione a unidade "px"
+    }
+  }
+
+  @media (max-width: 1880px) {
+    height: 300px;
+    position: unset;
+    display: none;
+
+    img {
+      max-width: 100%;
+      display: none;
+    }
+    
+    &__animals {
+      img {
+        display: none;
+      }
+    }
+  }
+}

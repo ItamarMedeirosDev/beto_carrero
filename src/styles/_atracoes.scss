@@ -1,0 +1,64 @@
+.atracoes {
+  padding: 80px 0 20px;
+  background-color: #e0f1ff;
+
+  img {
+    max-height: 300px;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #1B202F;
+    max-width: 80%;
+    height: 400px;
+
+    &--laranja {
+      background-color: #FF8F12;
+    }
+    &--rosa {
+      background-color: #E71A79;
+    }
+    &--preto {
+      background-color: #232323;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  
+  &__image {
+    max-width: 360px;
+  }
+  
+  &__details {
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    &__text {
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+      margin-right: 0;
+      height: auto;
+      max-width: 100%;
+    }
+    &__image {
+      width: 100%;
+      margin-top: 20px;
+    }
+    &__details {
+      margin-right: 0;
+    }
+  }
+}
